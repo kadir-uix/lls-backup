@@ -1,0 +1,40 @@
+@import './fonts.scss';
+@import './tailwind.css';
+
+.hero-start {
+  li {
+    height: 80vh;
+    img {
+      height: 100vh !important;
+      object-fit: cover;
+    }
+  }
+}
+
+.featured-products {
+  ul {
+    display: grid;
+    margin: 0 0 100px 0;
+    li {
+      > div {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.collection-page {
+  ul {
+    display: grid;
+  }
+}
+
+.detail-image-gallery {
+  div {
+    display: block;
+    position: relative;
+  }
+}

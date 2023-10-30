@@ -1,0 +1,41 @@
+@import './tailwind.css';
+@font-face {
+  font-family: "Stage Grotesk";
+  src: url("/fonts/StageGrotesk-Light.woff2") format("woff2"), url("/fonts/StageGrotesk-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Stage Grotesk";
+  src: url("/fonts/StageGrotesk-Light.woff2") format("woff2"), url("/fonts/StageGrotesk-Light.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.hero-start li {
+  height: 80vh;
+}
+.hero-start li img {
+  height: 100vh !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.featured-products ul {
+  display: grid;
+  margin: 0 0 100px 0;
+}
+.featured-products ul li > div {
+  width: 100%;
+}
+.featured-products ul li img {
+  width: 100%;
+}
+
+.collection-page ul {
+  display: grid;
+}
+
+.detail-image-gallery div {
+  display: block;
+  position: relative;
+}/*# sourceMappingURL=styles.css.map */
