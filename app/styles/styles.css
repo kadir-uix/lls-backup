@@ -38,4 +38,26 @@
 .detail-image-gallery div {
   display: block;
   position: relative;
+}
+
+.container-product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+
+.Gallery {
+  flex: 1;
+}
+
+.Right {
+  flex: 1;
+  order: 1;
+}
+
+.content-right {
+  position: absolute;
+  left: 50%;
+  top: 400px;
+  z-index: 11;
 }/*# sourceMappingURL=styles.css.map */

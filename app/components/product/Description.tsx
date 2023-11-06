@@ -36,7 +36,7 @@ function ProductPrices({
   );
 }
 
-export default function ProductWidget({
+export default function DescWidget({
   sanityProduct,
   storefrontProduct,
   storefrontVariants,
@@ -52,7 +52,7 @@ export default function ProductWidget({
   return (
     <div
       className={clsx(
-        'Right pointer-events-auto z-10 ml-auto  bg-white px-8 py-6',
+        'pointer-events-auto z-10 ml-auto  bg-white px-8 py-6',
         'md:w-full',
       )}
     >

@@ -40,9 +40,9 @@ export default function ProductGallery({
   }
 
   return (
-    <div className="relative bg-white" tabIndex={-1}>
-      <div className="h-full overflow-hidden">
-        <div className="detail-image-gallery w-full bg-lightGray md:w-2/3">
+    <div className="Gallery relative bg-white" tabIndex={-1}>
+      <div className="detail-wrapper h-full overflow-hidden">
+        <div className="detail-image-gallery w-full bg-lightGray">
           {/* Slides */}
           {media.map((med) => {
             let extraProps: Record<string, any> = {};

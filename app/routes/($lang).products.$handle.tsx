@@ -178,7 +178,7 @@ export default function ProductHandle() {
   } = useLoaderData();
   return (
     <ColorTheme value={page.colorTheme}>
-      <div className="relative w-full">
+      <div className="container-product-detail relative w-full">
         <Suspense
           fallback={
             <ProductDetails
@@ -192,7 +192,7 @@ export default function ProductHandle() {
         >
           <Await
             errorElement="There was a problem loading related products"
-            resolve={variants}
+            resolve={[variants, gids]}
           >
             {(resp) => (
               <ProductDetails
@@ -210,6 +210,7 @@ export default function ProductHandle() {
           className={clsx(
             'w-full', //
             'lg:w-[calc(100%-315px)]',
+            'content-right',
           )}
         >
           {/* Body */}
@@ -220,7 +221,7 @@ export default function ProductHandle() {
                   blocks={page.body}
                   className={clsx(
                     'max-w-[660px] px-4 pb-24 pt-8', //
-                    'md:px-8',
+                    'Right md:px-8',
                   )}
                 />
               </Await>
