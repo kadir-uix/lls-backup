@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 import Button from '~/components/elements/Button';
 import Link from '~/components/elements/Link';
+import LinkTwo from '~/components/elements/LinkTwo';
 import SanityImage from '~/components/media/SanityImage';
 import ProductHotspot from '~/components/product/Hotspot';
 import ProductTag from '~/components/product/Tag';
@@ -16,6 +17,7 @@ export default function ImageModule({module}: Props) {
   if (!module.image) {
     return null;
   }
+  console.log(module.callToAction);
 
   return (
     <div className="relative">
@@ -23,6 +25,13 @@ export default function ImageModule({module}: Props) {
         <Link className="group" link={module.callToAction.link}>
           <ImageContent module={module} />
         </Link>
+      ) : (
+        <ImageContent module={module} />
+      )}
+      {module.variant === 'callToAction' && module.callToAction?.link ? (
+        <LinkTwo className="group" link={module.callToAction.link}>
+          <ImageContent module={module} />
+        </LinkTwo>
       ) : (
         <ImageContent module={module} />
       )}

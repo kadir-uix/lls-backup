@@ -43,6 +43,7 @@ export default defineField({
       validation: (Rule) => Rule.required(),
       fieldset: 'copy',
     }),
+
     // Body
     defineField({
       name: 'body',

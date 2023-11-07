@@ -217,6 +217,10 @@ export interface SanityModuleImageCallToAction extends SanityModuleImageBase {
     link: SanityLink;
     title?: string;
   };
+  callToActionTwo?: {
+    link: SanityLink;
+    title?: string;
+  };
   variant: 'callToAction';
 }
 
