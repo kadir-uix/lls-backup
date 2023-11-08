@@ -52,7 +52,7 @@ export default function ProductWidget({
   return (
     <div
       className={clsx(
-        'Right pointer-events-auto z-10 ml-auto  bg-white px-8 py-6',
+        'Right Product-Sidebar pointer-events-auto z-10 ml-auto  bg-white px-8 py-6',
         'md:w-full',
       )}
     >
