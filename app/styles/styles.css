@@ -36,7 +36,7 @@
   width: 100%;
 }
 .hero-start ul li img {
-  height: 100vh !important;
+  height: 80vh !important;
   -o-object-fit: cover;
      object-fit: cover;
 }
