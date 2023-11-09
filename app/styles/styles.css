@@ -27,7 +27,12 @@
   display: block;
   height: 80vh;
 }
-.hero-start ul li :first-child {
+@media screen and (max-width: 1024px) {
+  .hero-start ul li {
+    width: 100%;
+  }
+}
+.hero-start ul li:first-child {
   width: 100%;
 }
 .hero-start ul li img {

@@ -16,7 +16,10 @@
       width: 50%;
       display: block;
       height: 80vh;
-      :first-child {
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
+      &:first-child {
         width: 100%;
       }
       img {
