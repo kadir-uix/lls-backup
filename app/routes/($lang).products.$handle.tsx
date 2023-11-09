@@ -209,7 +209,7 @@ export default function ProductHandle() {
         <div
           className={clsx(
             'w-full', //
-            'lg:w-[calc(100%-315px)]',
+            'lg:max-w-[calc(50vw-32px)]',
             'content-right',
           )}
         >
@@ -220,8 +220,8 @@ export default function ProductHandle() {
                 <PortableText
                   blocks={page.body}
                   className={clsx(
-                    'max-w-[660px] px-4 pb-24 pt-8', //
-                    'Right md:px-8',
+                    ' px-4 pb-24 pt-8', //
+                    'Right md:px-0',
                   )}
                 />
               </Await>

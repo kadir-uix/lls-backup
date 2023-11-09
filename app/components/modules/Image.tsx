@@ -16,9 +16,10 @@ export default function ImageModule({module}: Props) {
   if (!module.image) {
     return null;
   }
+  console.log(module.callToAction);
 
   return (
-    <div className="relative">
+    <div className="ctaimage relative">
       {module.variant === 'callToAction' && module.callToAction?.link ? (
         <Link className="group" link={module.callToAction.link}>
           <ImageContent module={module} />
@@ -26,6 +27,13 @@ export default function ImageModule({module}: Props) {
       ) : (
         <ImageContent module={module} />
       )}
+      {/* {module.variant === 'callToAction' && module.callToAction?.link ? (
+        <LinkTwo className="group" link={module.callToAction.link}>
+          <ImageContent module={module} />
+        </LinkTwo>
+      ) : (
+        <ImageContent module={module} />
+      )} */}
 
       {/* Caption */}
       {module.variant === 'caption' && module.caption && (
