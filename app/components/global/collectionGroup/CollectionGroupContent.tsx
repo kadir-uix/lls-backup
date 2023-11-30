@@ -95,13 +95,13 @@ export default function CollectionGroupContent({
           {products ? (
             <>
               <div className="text-lg font-bold">{collection.title}</div>
-              <ul className="mt-3 grid grid-cols-4 gap-2">
+              <ul className="mt-3 grid grid-cols-1 gap-2">
                 {renderCollectionProducts()}
               </ul>
             </>
           ) : (
             <>
-              <div className="-full mb-2 h-4 w-48 bg-gray"></div>
+              <div className="mb-2 h-4 w-48 rounded-full bg-gray"></div>
               <ul className="mt-3 grid grid-cols-1 gap-2">
                 {Array(4)
                   .fill(true)

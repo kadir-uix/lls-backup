@@ -48,7 +48,6 @@ export default function ProductCard({
     price: firstVariant.price.amount,
     quantity: 1,
   };
-
   return (
     <div className="group relative">
       <div
@@ -123,14 +122,14 @@ export default function ProductCard({
           </Link>
 
           {/* Vendor */}
-          {storefrontProduct.vendor && (
+          {/* {storefrontProduct.vendor && (
             <div className="text-darkGray">{storefrontProduct.vendor}</div>
-          )}
+          )} */}
 
           {/* Product options */}
-          {multipleProductOptions && (
+          {/* {multipleProductOptions && (
             <div className="text-darkGray">{productOptions}</div>
-          )}
+          )} */}
         </div>
 
         {/* Price / compare at price */}

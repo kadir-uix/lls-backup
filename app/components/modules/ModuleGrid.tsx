@@ -54,7 +54,7 @@ export default function ModuleGrid({items}: Props) {
   return (
     <ul
       className={clsx([
-        'auto-cols-max grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4',
+        'auto-cols-max grid-cols-1 gap-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3',
         // isProductModule ? productLayoutClasses : 'items-center justify-center',
       ])}
     >

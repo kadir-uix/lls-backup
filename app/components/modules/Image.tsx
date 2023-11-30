@@ -16,7 +16,7 @@ export default function ImageModule({module}: Props) {
   if (!module.image) {
     return null;
   }
-  console.log(module.callToAction);
+  // console.log(module.callToAction);
 
   return (
     <div className="ctaimage relative">

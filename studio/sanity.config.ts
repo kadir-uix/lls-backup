@@ -1,11 +1,11 @@
 import {defineConfig, isDev} from 'sanity'
 
 import {deskTool} from 'sanity/desk'
-import {schemaTypes} from './schemas'
 import {structure} from './desk'
+import {schemaTypes} from './schemas'
 
-import {visionTool} from '@sanity/vision'
 import {colorInput} from '@sanity/color-input'
+import {visionTool} from '@sanity/vision'
 import {imageHotspotArrayPlugin} from 'sanity-plugin-hotspot-array'
 import {media, mediaAssetSource} from 'sanity-plugin-media'
 import {customDocumentActions} from './plugins/customDocumentActions'
@@ -14,9 +14,9 @@ const devOnlyPlugins = [visionTool()]
 
 export default defineConfig({
   name: 'default',
-  title: 'Shopify - sanitylls',
+  title: 'Low Lights Studios',
 
-  projectId: 'f9u6nc68',
+  projectId: 'quz7sxyd',
   dataset: 'production',
 
   plugins: [
