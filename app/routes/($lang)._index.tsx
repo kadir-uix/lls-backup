@@ -52,8 +52,7 @@ export async function loader({context, params}: LoaderArgs) {
 
 export default function Index() {
   const {page, gids} = useLoaderData<typeof loader>();
-  // console.log(page.modules);
-  // console.log(page.modules);
+
   const productModules = page.modules.filter(
     (module) => module._type === 'module.product',
   );
