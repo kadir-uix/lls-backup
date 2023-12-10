@@ -80,6 +80,12 @@
     top: 400px;
     z-index: 11;
   }
+  .Product-Sidebar {
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    right: 0;
+  }
   .Product-Sidebar .portableText {
     padding: 0;
   }

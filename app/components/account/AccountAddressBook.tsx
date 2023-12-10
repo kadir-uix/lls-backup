@@ -24,7 +24,7 @@ export function AccountAddressBook({
             <p>You haven&apos;t saved any addresses yet.</p>
           )}
           {Boolean(addresses?.length) && (
-            <div className="my-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+            <div className="md:grid-cols-43 my-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
               {customer.defaultAddress && (
                 <Address address={customer.defaultAddress} defaultAddress />
               )}
